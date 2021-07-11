@@ -4,6 +4,8 @@
 }
 
 #header {
+  position: fixed;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,6 +16,7 @@
   padding: 1em;
   max-height: 2em;
 }
+
 .nav-link {
   margin-right: 1.5em;
 }
@@ -29,7 +32,15 @@
   flex-direction: column;
   align-items: center;
 }
+
+.flex-center-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 #contact {
+  padding-top: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,15 +81,82 @@
 .icon {
   width: 100px;
 }
+
 #pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5em;
 }
+
+@media only screen and (max-width: 1000px) {
+  #pricing {
+    flex-direction: column;
+  }
+}
+
+.pricing-element {
+  width: 250px;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pricing-title {
+  width: 100%;
+  background-color: lightgray;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.pricing-details {
+  text-align: center;
+}
+
+.pricing-details p {
+  padding: 0.25em 0;
+}
+
+.pricing-select {
+  padding: 0.75em;
+  border: none;
+  background-color: coral;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+
+.pricing-select:hover {
+  background-color: chocolate;
+}
+
 .description {
   width: 500px;
 }
 
 footer {
-  height: 150px;
+  padding: 3em 1.5em 1em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.footer-link {
+  padding: 0 0.25em;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-link:hover {
+  color: gray;
+}
+
 .container {
   display: flex;
   flex-direction: row;
