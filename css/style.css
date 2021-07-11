@@ -24,7 +24,11 @@
 .nav-link:hover {
   color: gray;
 }
-
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #contact {
   display: flex;
   flex-direction: column;
@@ -55,17 +59,29 @@
 }
 
 #features {
-  height: 90vh;
 }
 
 #howitworks {
-  height: 90vh;
 }
-
+.icon img {
+  color: yellow;
+  padding-right: 2.5em;
+}
+.icon {
+  width: 100px;
+}
 #pricing {
-  height: 90vh;
+}
+.description {
+  width: 500px;
 }
 
 footer {
   height: 150px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }

@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
@@ -23,7 +27,10 @@
     -->
     <header id="header">
       <a href="/">
-        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id="header-img" />
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          id="header-img"
+        />
       </a>
       <nav id="nav-bar">
         <a class="nav-link" href="#features">Features</a>
@@ -34,22 +41,69 @@
     <section id="contact">
       <h2>Handcrafted, home-made Trombones</h2>
       <form id="contact-form" action="/">
-        <input type="email" id="email" name="email" placeholder="example@example.com">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+        />
         <input type="submit" id="submit" value="Submit" />
       </form>
     </section>
     <section id="features">
-
+      <div class="main-container flex-center">
+        <div class="container">
+          <div class="icon">
+            <img src="asset/fire-solid.svg" width="50px" alt="Icon" />
+          </div>
+          <div class="description">
+            <h1>Premium Materials</h1>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="icon">
+            <img src="asset/truck-solid.svg" width="50px" alt="Icon" />
+          </div>
+          <div class="description">
+            <h1>Fast Shipping</h1>
+            <p>
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="icon">
+            <img src="asset/battery-full-solid.svg" width="50px" alt="Icon" />
+          </div>
+          <div class="description">
+            <h1>Quality Assurance</h1>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="howitworks">
-
+    <section id="howitworks" class="flex-center">
+      <h1>Watch the following video for How it works</h1>
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </section>
-    <section id="pricing">
-
-    </section>
-    <footer>
-
-    </footer>
+    <section id="pricing"></section>
+    <footer></footer>
     <script src="js/index.js"></script>
   </body>
 </html>
